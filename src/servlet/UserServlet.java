@@ -38,9 +38,11 @@ public class UserServlet extends HttpServlet {
 		String name  = req.getParameter("name");
 		//因为页面上请求的数据都是String类型  所有需要强转(包装类)
 		int age =  Integer.parseInt(req.getParameter("age"));
+		
 		User user = new User();
 		user.setName(name);
 		user.setAge(age);
+		user.setName("張三");
 		
 		us.save(user);
 	}
