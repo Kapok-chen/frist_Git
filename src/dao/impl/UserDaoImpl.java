@@ -22,4 +22,10 @@ public class UserDaoImpl implements UserDao {
 		}
 	}
 
+	@Override
+	public void updata(User user) {
+		System.out.println("執行修改用戶信息的操作");
+	}
+
+
 }
